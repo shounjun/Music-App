@@ -16,6 +16,7 @@ function Albums(props) {
       ></Disc>
     );
   });
+
   return <div className="album-item">{albuns}</div>;
 }
 

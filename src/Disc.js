@@ -3,12 +3,13 @@ import "./Disc.css";
 
 function Disc(props) {
   const [show, setShow] = useState(false);
+  const tracks = props.tracks;
 
   let songs = [];
-  songs.push();
-  props.tracks.forEach((song, i) => {
+  tracks.forEach((song, i) => {
     songs.push(<p key={i}>{song}</p>);
   });
+
   const songDisplay = () => {
     setShow(!show);
   };
